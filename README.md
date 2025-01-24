@@ -1,12 +1,12 @@
-# README - Spark Advisors Code Challlenge 2025
+# README - Spark Advisors Code Challenge 2025
 
   **Summary:**
-  - My solution is a python script at it's core
-  - The script seperates concerns into 3 main areas - Scripting Setup, Helper functions, and CSV generation based on provided files
-  - Please note a new CSV file will be generated with previous data to preserve data integrity
-  - An additonal logging file has been added for easier debugging
-  - A basic test suite has been added to maintain the provided helper functions
-  - I've provided a local enivronment setup guide to help running the script => `./COMMENTS.md`
+  - My solution is a Python script at its core.
+  - The script separates concerns into 3 main areas: Scripting Setup, Helper Functions, and CSV generation based on the provided files.
+  - Please note that a new CSV file will be generated alongside the original data to preserve data integrity.
+  - An additional log file has been added for easier debugging.
+  - A basic test suite has been included to maintain the provided helper functions. 
+  - I've provided a local environment setup guide to help you run the script in ./COMMENTS.md.
 
 # Running the Python Script
   - Navigate to the root directory of the project
@@ -15,20 +15,20 @@
   python3 solution.py
 ```
 
-  - For an updated csv file go here => ./data/updated_slcsp_<TIMESTAMP>.csv
-  - For a detailed logging output go here => ./logs/*
+  - The updated csv file can be found here => ./data/updated_slcsp_<TIMESTAMP>.csv
+  - For a detailed logging output, check here => ./logs/*
 
 # Running the Test Suite
   - Navigate to the root directory of the project
-  - In terminal: For helpers.py
+  - In terminal, for helpers.py:
 ```bash
   python3 -m unittest test_helpers.py
 ```
 
-  - Please note, it's expected to raise logging in terminal when running the test suite
+  - Please note, it's expected to generate logging in terminal when running the test suite
 
 # Notes on my Approach:
-  - Determine the 2nd lowest cost (silver plan) for a group of zipcodes
+  - The goal is to determine the second-lowest cost (SLCSP) silver plan for a group of ZIP codes.
 
   **Provided Files:**
   - `slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
