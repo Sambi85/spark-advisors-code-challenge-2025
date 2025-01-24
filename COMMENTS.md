@@ -1,55 +1,58 @@
 # Spark Advisors Code Challlenge 2025
 
-Summary:
-- My solution is a python script at it's core
-- There are 3 main sections - Setup, helper functions, and updating the provided csv
-- Added additonal logging for easier debugging 
+  **Summary:**
+  - My solution is a python script at it's core
+  - The script seperates concerns into 3 main areas - Scripting Setup, Helper functions, and CSV generation based on provided files
+  - Please note a new CSV file will be generated with previous data to preserve data inntegrity
+  - An additonal logging file has been added for easier debugging
+  - A basic test suite has been added to maintain the provided helper functions
 
 # Running the Python Script
-- Navigate to the root directory of the project
-- In terminal:
+  - Navigate to the root directory of the project
+  - In terminal:
+```bash
   python3 solution.py
+```
 
-- For an updated csv file go here => ./data/updated_slcsp_<TIMESTAMP>.csv
-- For a detailed logging output go here => ./logs/*
+  - For an updated csv file go here => ./data/updated_slcsp_<TIMESTAMP>.csv
+  - For a detailed logging output go here => ./logs/*
 
 # Running the Test Suite
-- Navigate to the root directory of the project
-- In terminal: For helpers.py
+  - Navigate to the root directory of the project
+  - In terminal: For helpers.py
+```bash
   python3 -m unittest test_helpers.py
+```
 
-- Please note, it's expected to raise logging in terminal when running the test suite
+  - Please note, it's expected to raise logging in terminal when running the test suite
 
 # Notes on my Approach:
-- Determine the 2nd lowest cost (silver plan) for a group of zipcodes
+  - Determine the 2nd lowest cost (silver plan) for a group of zipcodes
 
-Provided Files:
-- `slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
-- `plans.csv` — all the health plans in the U.S. on the marketplace
-- `zips.csv` — a mapping of ZIP code to county/counties & rate area(s)
-- `README.md` — outlines the challenge
+  **Provided Files:**
+  - `slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
+  - `plans.csv` — all the health plans in the U.S. on the marketplace
+  - `zips.csv` — a mapping of ZIP code to county/counties & rate area(s)
+  - `README.md` — outlines the challenge
 
-Input:
-- CSV file => slcsp.csv, update this
-- CSV file => plans.csv
-- CSV file => zips.csv
+  **Input:**
+  - CSV file 1 => slcsp.csv, update this
+  - CSV file 2 => plans.csv
+  - CSV file 3 => zips.csv
 
-Output: 
-- Updated CSV file => slcsp.csv
-- Emit the answer on stdout (log output)
-- Emitted values should be in the same CSV format as the input => zipcode, rate
-- float values should be formatted to 2 decimal places => 245.20
-- missing values should be left blank
+  **Output:** 
+  - Updated CSV file => slcsp.csv
+  - Emit the answer on stdout (log output)
+  - Emitted values should be in the same CSV format as the input => zipcode, rate
+  - Float values should be formatted to 2 decimal places => 245.20
+  - Missing values should be left blank
 
-What the happy path looks like:
-- Use zipcode to look up the rate area
-- Use rate area and metal level(silver) to gather all plans
-- Grab the 2nd lowest cost plan
-- Update the slcsp.csv file with the 2nd lowest cost plan under rate column
+  **What the happy path looks like:**
+  - Use zipcode to look up the rate area
+  - Use rate area and metal level(silver) to gather all plans
+  - Grab the 2nd lowest cost plan
+  - Update the slcsp.csv file with the 2nd lowest cost plan under rate column
 
-Identified Edge Cases:
-- If there is no 2nd lowest cost plan, leave the rate column blank
-- If a ZIP code maps to multiple rate areas in the zips.csv file, we will return None or leave the rate blank because we can't definitively determine the second-lowest cost.
-
-# References
-- n/a
+  **Identified Edge Cases:**
+  - If there is no 2nd lowest cost plan, leave the rate column blank
+  - If a ZIP code maps to multiple rate areas in the zips.csv file, we will return None or leave the rate blank because we can't definitively determine the second-lowest cost.
