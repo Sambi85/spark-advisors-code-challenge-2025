@@ -10,8 +10,8 @@ Summary:
 - In terminal:
   python3 solution.py
 
-- You can also observe detailed log output here:
-- ./spark-advisors-code-challenge-2025/logs/log.txt
+- For an upated csv file go here => ./data/updated_slcsp.csv
+- For detailed logging output go here => ./logs/log.txt
 - Please note log.txt is setup to be overwritten on each run by default
 
 # Running the Test Suite
