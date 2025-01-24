@@ -6,6 +6,7 @@
   - Please note a new CSV file will be generated with previous data to preserve data integrity
   - An additonal logging file has been added for easier debugging
   - A basic test suite has been added to maintain the provided helper functions
+  - I've provided a local enivronment setup guide to help running the script => `./COMMENTS.md`
 
 # Running the Python Script
   - Navigate to the root directory of the project
