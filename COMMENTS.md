@@ -1,64 +1,64 @@
-# Spark Advisors Code Challlenge 2025
+# COMMENTS - SETUP GUIDE
+  - This readme focuses on setup in your local environment as  per instructions.
+  - Currently, it's a Unix-based machine guide (like macOS or Linux).
+  - If you're familiar with this setup, you can skip this section and go to `README.md`
 
-  **Summary:**
-  - My solution is a python script at it's core
-  - The script seperates concerns into 3 main areas - Scripting Setup, Helper functions, and CSV generation based on provided files
-  - Please note a new CSV file will be generated with previous data to preserve data integrity
-  - An additonal logging file has been added for easier debugging
-  - A basic test suite has been added to maintain the provided helper functions
+# Prerequisites
+  - Before starting, ensure that your local machine has the following installed:
 
-# Running the Python Script
-  - Navigate to the root directory of the project
-  - In terminal:
+  - Python 3.6+: The Python runtime to execute the script.
+  - Git: For cloning the repository.
+  - pip: Python's package manager to install dependencies.
+  - Virtual Environment (venv): A tool for creating isolated Python environments.
+
+# Verify Python and Git Installation
+  - You can verify if Python and Git are installed by running these commands:
+  
+  In your terminal:
+
 ```bash
-  python3 solution.py
+python3 --version  # Check Python version 
+git --version     # Check Git version
 ```
 
-  - For an updated csv file go here => ./data/updated_slcsp_<TIMESTAMP>.csv
-  - For a detailed logging output go here => ./logs/*
+  **If either is missing, you can install them:**
+     - Install Python: Follow instructions at python.org.
+     - Install Git: Follow instructions at git-scm.com.
 
-# Running the Test Suite
-  - Navigate to the root directory of the project
-  - In terminal: For helpers.py
+# Setting Up Your Local Development Environment
+
+  1. **Clone the Repository**
+    - First, clone the repository to your local machine using Git.
+
+In terminal:
 ```bash
-  python3 -m unittest test_helpers.py
+git clone https://github.com/Sambi85/spark-advisors-code-challenge-2025.git
+cd ./spark-advisors-code-challenge-2025
 ```
 
-  - Please note, it's expected to raise logging in terminal when running the test suite
+2. **Create a Virtual Environment**
+    - Inside the project folder, create a virtual environment using Python's venv module.
+   
+In terminal:
+```bash
+python3 -m venv venv
+```
 
-# Notes on my Approach:
-  - Determine the 2nd lowest cost (silver plan) for a group of zipcodes
+3. **Activate the Virtual Environment**
+  - Once the virtual environment is created, activate it. This isolates your project’s dependencies from your global Python environment.
 
-  **Provided Files:**
-  - `slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
-  - `plans.csv` — all the health plans in the U.S. on the marketplace
-  - `zips.csv` — a mapping of ZIP code to county/counties & rate area(s)
-  - `README.md` — outlines the challenge
+In terminal:
+```bash
+source venv/bin/activate
+```
 
-  **Input:**
-  - `CSV file 1` => slcsp.csv (will update this)
-  - `CSV file 2` => plans.csv
-  - `CSV file 3` => zips.csv
+4. **Run the Project**
+  - After the dependencies are installed, you’re ready to run the project. Checkout my \`COMMENTS.md\` for more details on the project and how to run the script.
 
-  **Output:** 
-  - Updated CSV file => `slcsp.csv`
-  - Emit the answer on `stdout (terminal output)`
-  - Emitted values should be in the `same CSV format` as the input => `zipcode`, `rate`
-  - Positioning of the **columns** and **rows** should be the same as the original csv file
-  - Float values should be formatted to **2 decimal places** =>**245.20**
-  - Missing values should be left blank
+5. **Deactivating the Virtual Environment**
+  - Once you’re finished working on the project, you can deactivate the virtual environment with:
 
-  **What the happy path looks like:**
-  - Use zipcode to look up the rate area
-  - Use rate area and metal level(silver) to gather all plans
-  - Grab the 2nd lowest cost plan
-  - Update the slcsp.csv file with the 2nd lowest cost plan under rate column
-
-  **Identified Edge Cases:**
-  1. It's possible that there can be no 2nd lowest cost plan, leave the rate column blank
-  2. A zipcode can potentially be in multiple counties.
-    - If the county cannot be determined, it may still be possible to determine the rate area for zipcode.
-    - We need to check if the county column contains multiple counties
-
-  3. A zipcode can also be in more than one rate area. 
-    - In that case, the answer is ambiguous and should be left blank.
+In terminal:
+```bash
+deactivate
+```
