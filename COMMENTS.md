@@ -10,9 +10,8 @@ Summary:
 - In terminal:
   python3 solution.py
 
-- For an upated csv file go here => ./data/updated_slcsp.csv
-- For detailed logging output go here => ./logs/log.txt
-- Please note log.txt is setup to be overwritten on each run by default
+- For an updated csv file go here => ./data/updated_slcsp_<TIMESTAMP>.csv
+- For a detailed logging output go here => ./logs/*
 
 # Running the Test Suite
 - Navigate to the root directory of the project
@@ -25,10 +24,10 @@ Summary:
 - Determine the 2nd lowest cost (silver plan) for a group of zipcodes
 
 Provided Files:
-`slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
-`plans.csv` — all the health plans in the U.S. on the marketplace
-`zips.csv` — a mapping of ZIP code to county/counties & rate area(s)
-`README.md` — outlines the challenge
+- `slcsp.csv` — Update this file, second column with the rate (see below) of the corresponding SLCSP
+- `plans.csv` — all the health plans in the U.S. on the marketplace
+- `zips.csv` — a mapping of ZIP code to county/counties & rate area(s)
+- `README.md` — outlines the challenge
 
 Input:
 - CSV file => slcsp.csv, update this

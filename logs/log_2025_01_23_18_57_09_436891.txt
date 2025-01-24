@@ -1,0 +1,144 @@
+2025-01-23 18:57:09,481 - INFO - Found rate area 3 for ZIP 64148
+2025-01-23 18:57:09,503 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 3 !!!
+2025-01-23 18:57:09,503 - INFO - Updated: ZIP 64148 - Rate Area 3 - SLCSP 195.66
+2025-01-23 18:57:09,549 - INFO - Found rate area 6 for ZIP 67118
+2025-01-23 18:57:09,570 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 6 !!!
+2025-01-23 18:57:09,570 - INFO - Updated: ZIP 67118 - Rate Area 6 - SLCSP 165.50
+2025-01-23 18:57:09,614 - INFO - Found rate area 8 for ZIP 40813
+2025-01-23 18:57:09,636 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 8 !!!
+2025-01-23 18:57:09,636 - INFO - Updated: ZIP 40813 - Rate Area 8 - SLCSP 237.91
+2025-01-23 18:57:09,680 - INFO - Found rate area 3 for ZIP 18229
+2025-01-23 18:57:09,702 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 3 !!!
+2025-01-23 18:57:09,702 - INFO - Updated: ZIP 18229 - Rate Area 3 - SLCSP 195.66
+2025-01-23 18:57:09,748 - INFO - Found rate area 3 for ZIP 51012
+2025-01-23 18:57:09,769 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 3 !!!
+2025-01-23 18:57:09,769 - INFO - Updated: ZIP 51012 - Rate Area 3 - SLCSP 195.66
+2025-01-23 18:57:09,813 - INFO - Found rate area 2 for ZIP 79168
+2025-01-23 18:57:09,835 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 2 !!!
+2025-01-23 18:57:09,835 - INFO - Updated: ZIP 79168 - Rate Area 2 - SLCSP 183.94
+2025-01-23 18:57:09,878 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 54923: 15, 11 !!!
+2025-01-23 18:57:09,878 - WARNING - No definitive rate area for ZIP 54923. Rate left blank !!!
+2025-01-23 18:57:09,925 - INFO - Found rate area 4 for ZIP 67651
+2025-01-23 18:57:09,946 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 4 !!!
+2025-01-23 18:57:09,946 - INFO - Updated: ZIP 67651 - Rate Area 4 - SLCSP 166.13
+2025-01-23 18:57:09,991 - INFO - Found rate area 12 for ZIP 49448
+2025-01-23 18:57:10,013 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 12 !!!
+2025-01-23 18:57:10,013 - INFO - Updated: ZIP 49448 - Rate Area 12 - SLCSP 221.63
+2025-01-23 18:57:10,058 - INFO - Found rate area 11 for ZIP 27702
+2025-01-23 18:57:10,079 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 11 !!!
+2025-01-23 18:57:10,079 - INFO - Updated: ZIP 27702 - Rate Area 11 - SLCSP 235.65
+2025-01-23 18:57:10,120 - INFO - Found rate area 11 for ZIP 47387
+2025-01-23 18:57:10,139 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 11 !!!
+2025-01-23 18:57:10,139 - INFO - Updated: ZIP 47387 - Rate Area 11 - SLCSP 235.65
+2025-01-23 18:57:10,179 - INFO - Found rate area 1 for ZIP 50014
+2025-01-23 18:57:10,198 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:10,198 - INFO - Updated: ZIP 50014 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:10,238 - INFO - Found rate area 28 for ZIP 33608
+2025-01-23 18:57:10,257 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 28 !!!
+2025-01-23 18:57:10,257 - INFO - Updated: ZIP 33608 - Rate Area 28 - SLCSP 268.48
+2025-01-23 18:57:10,298 - INFO - Found rate area 8 for ZIP 06239
+2025-01-23 18:57:10,318 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 8 !!!
+2025-01-23 18:57:10,318 - INFO - Updated: ZIP 06239 - Rate Area 8 - SLCSP 237.91
+2025-01-23 18:57:10,358 - INFO - Found rate area 11 for ZIP 54919
+2025-01-23 18:57:10,376 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 11 !!!
+2025-01-23 18:57:10,376 - INFO - Updated: ZIP 54919 - Rate Area 11 - SLCSP 235.65
+2025-01-23 18:57:10,417 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 46706: 3, 4 !!!
+2025-01-23 18:57:10,417 - WARNING - No definitive rate area for ZIP 46706. Rate left blank !!!
+2025-01-23 18:57:10,457 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 14846: 2, 5 !!!
+2025-01-23 18:57:10,457 - WARNING - No definitive rate area for ZIP 14846. Rate left blank !!!
+2025-01-23 18:57:10,497 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 48872: 7, 4, 5 !!!
+2025-01-23 18:57:10,497 - WARNING - No definitive rate area for ZIP 48872. Rate left blank !!!
+2025-01-23 18:57:10,536 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 43343: 9, 3 !!!
+2025-01-23 18:57:10,536 - WARNING - No definitive rate area for ZIP 43343. Rate left blank !!!
+2025-01-23 18:57:10,577 - INFO - Found rate area 10 for ZIP 77052
+2025-01-23 18:57:10,596 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 10 !!!
+2025-01-23 18:57:10,596 - INFO - Updated: ZIP 77052 - Rate Area 10 - SLCSP 235.92
+2025-01-23 18:57:10,636 - INFO - Found rate area 1 for ZIP 07734
+2025-01-23 18:57:10,655 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:10,655 - INFO - Updated: ZIP 07734 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:10,695 - INFO - Found rate area 1 for ZIP 95327
+2025-01-23 18:57:10,714 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:10,714 - INFO - Updated: ZIP 95327 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:10,754 - INFO - Found rate area 7 for ZIP 12961
+2025-01-23 18:57:10,773 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 7 !!!
+2025-01-23 18:57:10,773 - INFO - Updated: ZIP 12961 - Rate Area 7 - SLCSP 209.35
+2025-01-23 18:57:10,813 - INFO - Found rate area 9 for ZIP 26716
+2025-01-23 18:57:10,832 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 9 !!!
+2025-01-23 18:57:10,832 - INFO - Updated: ZIP 26716 - Rate Area 9 - SLCSP 214.34
+2025-01-23 18:57:10,872 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 48435: 6, 5 !!!
+2025-01-23 18:57:10,872 - WARNING - No definitive rate area for ZIP 48435. Rate left blank !!!
+2025-01-23 18:57:10,911 - INFO - Found rate area 9 for ZIP 53181
+2025-01-23 18:57:10,930 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 9 !!!
+2025-01-23 18:57:10,930 - INFO - Updated: ZIP 53181 - Rate Area 9 - SLCSP 214.34
+2025-01-23 18:57:10,969 - INFO - Found rate area 5 for ZIP 52654
+2025-01-23 18:57:10,988 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 5 !!!
+2025-01-23 18:57:10,988 - INFO - Updated: ZIP 52654 - Rate Area 5 - SLCSP 183.94
+2025-01-23 18:57:11,028 - INFO - Found rate area 4 for ZIP 58703
+2025-01-23 18:57:11,047 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 4 !!!
+2025-01-23 18:57:11,047 - INFO - Updated: ZIP 58703 - Rate Area 4 - SLCSP 166.13
+2025-01-23 18:57:11,086 - INFO - Found rate area 19 for ZIP 91945
+2025-01-23 18:57:11,105 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 19 !!!
+2025-01-23 18:57:11,105 - INFO - Updated: ZIP 91945 - Rate Area 19 - SLCSP 226.84
+2025-01-23 18:57:11,143 - INFO - Found rate area 7 for ZIP 52146
+2025-01-23 18:57:11,162 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 7 !!!
+2025-01-23 18:57:11,162 - INFO - Updated: ZIP 52146 - Rate Area 7 - SLCSP 209.35
+2025-01-23 18:57:11,202 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 56097: 3, 1 !!!
+2025-01-23 18:57:11,202 - WARNING - No definitive rate area for ZIP 56097. Rate left blank !!!
+2025-01-23 18:57:11,242 - INFO - Found rate area 4 for ZIP 21777
+2025-01-23 18:57:11,261 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 4 !!!
+2025-01-23 18:57:11,261 - INFO - Updated: ZIP 21777 - Rate Area 4 - SLCSP 166.13
+2025-01-23 18:57:11,301 - INFO - Found rate area 2 for ZIP 42330
+2025-01-23 18:57:11,320 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 2 !!!
+2025-01-23 18:57:11,320 - INFO - Updated: ZIP 42330 - Rate Area 2 - SLCSP 183.94
+2025-01-23 18:57:11,360 - INFO - Found rate area 2 for ZIP 38849
+2025-01-23 18:57:11,379 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 2 !!!
+2025-01-23 18:57:11,379 - INFO - Updated: ZIP 38849 - Rate Area 2 - SLCSP 183.94
+2025-01-23 18:57:11,419 - INFO - Found rate area 10 for ZIP 77586
+2025-01-23 18:57:11,438 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 10 !!!
+2025-01-23 18:57:11,438 - INFO - Updated: ZIP 77586 - Rate Area 10 - SLCSP 235.92
+2025-01-23 18:57:11,479 - INFO - Found rate area 6 for ZIP 39745
+2025-01-23 18:57:11,497 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 6 !!!
+2025-01-23 18:57:11,497 - INFO - Updated: ZIP 39745 - Rate Area 6 - SLCSP 165.50
+2025-01-23 18:57:11,539 - INFO - Found rate area 1 for ZIP 03299
+2025-01-23 18:57:11,558 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:11,558 - INFO - Updated: ZIP 03299 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:11,597 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 63359: 6, 2, 5 !!!
+2025-01-23 18:57:11,597 - WARNING - No definitive rate area for ZIP 63359. Rate left blank !!!
+2025-01-23 18:57:11,637 - INFO - Found rate area 1 for ZIP 60094
+2025-01-23 18:57:11,655 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:11,656 - INFO - Updated: ZIP 60094 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:11,695 - INFO - Found rate area 5 for ZIP 15935
+2025-01-23 18:57:11,714 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 5 !!!
+2025-01-23 18:57:11,714 - INFO - Updated: ZIP 15935 - Rate Area 5 - SLCSP 183.94
+2025-01-23 18:57:11,754 - INFO - Found rate area 15 for ZIP 39845
+2025-01-23 18:57:11,773 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 15 !!!
+2025-01-23 18:57:11,773 - INFO - Updated: ZIP 39845 - Rate Area 15 - SLCSP 196.64
+2025-01-23 18:57:11,813 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 48418: 4, 5 !!!
+2025-01-23 18:57:11,813 - WARNING - No definitive rate area for ZIP 48418. Rate left blank !!!
+2025-01-23 18:57:11,853 - INFO - Found rate area 15 for ZIP 28411
+2025-01-23 18:57:11,871 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 15 !!!
+2025-01-23 18:57:11,871 - INFO - Updated: ZIP 28411 - Rate Area 15 - SLCSP 196.64
+2025-01-23 18:57:11,912 - INFO - Found rate area 3 for ZIP 37333
+2025-01-23 18:57:11,931 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 3 !!!
+2025-01-23 18:57:11,931 - INFO - Updated: ZIP 37333 - Rate Area 3 - SLCSP 195.66
+2025-01-23 18:57:11,971 - INFO - Found rate area 26 for ZIP 75939
+2025-01-23 18:57:11,989 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 26 !!!
+2025-01-23 18:57:11,989 - INFO - Updated: ZIP 75939 - Rate Area 26 - SLCSP 234.50
+2025-01-23 18:57:12,030 - INFO - Found rate area 1 for ZIP 07184
+2025-01-23 18:57:12,049 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:12,049 - INFO - Updated: ZIP 07184 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:12,088 - INFO - Found rate area 2 for ZIP 86313
+2025-01-23 18:57:12,107 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 2 !!!
+2025-01-23 18:57:12,107 - INFO - Updated: ZIP 86313 - Rate Area 2 - SLCSP 183.94
+2025-01-23 18:57:12,147 - INFO - Found rate area 6 for ZIP 61232
+2025-01-23 18:57:12,166 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 6 !!!
+2025-01-23 18:57:12,166 - INFO - Updated: ZIP 61232 - Rate Area 6 - SLCSP 165.50
+2025-01-23 18:57:12,205 - INFO - Found rate area 1 for ZIP 20047
+2025-01-23 18:57:12,224 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 1 !!!
+2025-01-23 18:57:12,224 - INFO - Updated: ZIP 20047 - Rate Area 1 - SLCSP 166.13
+2025-01-23 18:57:12,265 - WARNING - Invalid Rate - Multiple rate areas found for ZIP 47452: 16, 13, 15 !!!
+2025-01-23 18:57:12,265 - WARNING - No definitive rate area for ZIP 47452. Rate left blank !!!
+2025-01-23 18:57:12,304 - INFO - Found rate area 6 for ZIP 31551
+2025-01-23 18:57:12,324 - WARNING - Target Silver Plan Not found, need at least 2 plans for rate_area: 6 !!!
+2025-01-23 18:57:12,324 - INFO - Updated: ZIP 31551 - Rate Area 6 - SLCSP 165.50
+2025-01-23 18:57:12,324 - INFO - Processing complete. Total number of updates made: 41

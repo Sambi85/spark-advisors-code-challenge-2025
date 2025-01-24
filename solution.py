@@ -1,20 +1,22 @@
 import csv
 import os
 import logging
+from datetime import datetime
 from helpers import get_rate_area, get_second_lowest_silver_plan # importing custom helper functions
 
 plans = './data/plans.csv'
 slscp = './data/slcsp.csv'
 zipcodes = './data/zips.csv'
 
+timestamp = datetime.now().strftime('%Y_%m_%d_%H_%M_%S_%f') # appended to file names (fault tolerance/reliability)
 data_folder = os.path.join(os.getcwd(), './data') # dynamicially handle the file paths (future proofing/maintaibility)
 
 target_path = os.path.join(data_folder, 'slcsp.csv')
 plans_path = os.path.join(data_folder, 'plans.csv')
 zips_path = os.path.join(data_folder, 'zips.csv')
 
-updated_sclsp_path = os.path.join(data_folder, 'updated_slcsp.csv') # write path (used for data integrity/fault tolerance/reliability)
-log_file_path = os.path.join(os.getcwd(), 'logs', 'log.txt') # write path for log file (more context for debugging/maintaibility)
+updated_sclsp_path = os.path.join(data_folder, f'updated_slcsp_{timestamp}.csv') # write path (used for data integrity/fault tolerance/reliability)
+log_file_path = os.path.join(os.getcwd(), 'logs', f'log_{timestamp}.txt') # write path for log file (more context for debugging/maintaibility)
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True) # Make the logs folder if it doesn't exist
 
 # Setup logger
@@ -23,7 +25,6 @@ logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-
 update_count = 0 # logging counter for updates
 
 
