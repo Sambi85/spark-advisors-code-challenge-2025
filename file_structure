@@ -1,0 +1,18 @@
+your-repo-name/
+│
+├── data/
+│   ├── plans.csv # Input CSV file
+│   ├── slcsp.csv # Input CSV file
+│   ├── zips.csv # Input CSV file
+│   └── updated_slcsp_YYYY_MM_DD_HH_MM_SS_microseconds.csv # Output CSV file
+│
+├── logs/
+│   └── log_YYYY_MM_DD_HH_MM_SS_microseconds.txt  # Output log file
+│
+├── .gitignore  # Ignores target files and directories
+├── COMMENTS.md  # My Comments on the code
+├── file_structure # You are here!
+├── helpers.py  # Helper functions file
+├── solution.py  # Main Python solution file
+├── test_helpers.py  # Unit tests for helper functions
+└── README.md  # Focuses on local installation
