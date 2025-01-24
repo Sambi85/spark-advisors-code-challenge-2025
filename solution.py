@@ -15,7 +15,7 @@ zips_path = os.path.join(data_folder, 'zips.csv')
 
 updated_sclsp_path = os.path.join(data_folder, 'updated_slcsp.csv') # write path (used for data integrity/fault tolerance/reliability)
 log_file_path = os.path.join(os.getcwd(), 'logs', 'log.txt') # write path for log file (more context for debugging/maintaibility)
-
+os.makedirs(os.path.dirname(log_file_path), exist_ok=True) # Make the logs folder if it doesn't exist
 # Setup logger
 logging.basicConfig(
     filename=log_file_path, 
