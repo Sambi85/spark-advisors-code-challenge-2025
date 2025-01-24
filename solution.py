@@ -1,26 +1,20 @@
 import csv
 import os
 import logging
-
-# Script Setup ---------------------------------------------------------------------------------------------
+from helpers import get_rate_area, get_second_lowest_silver_plan # importing custom helper functions
 
 plans = './data/plans.csv'
 slscp = './data/slcsp.csv'
 zipcodes = './data/zips.csv'
 
-# Dynamicially handle the file paths (future proofing/maintaibility)
-data_folder = os.path.join(os.getcwd(), './data')
+data_folder = os.path.join(os.getcwd(), './data') # dynamicially handle the file paths (future proofing/maintaibility)
 
-# Provided CSV file paths
 target_path = os.path.join(data_folder, 'slcsp.csv')
 plans_path = os.path.join(data_folder, 'plans.csv')
 zips_path = os.path.join(data_folder, 'zips.csv')
 
-# Path to the output file (preserving the original file for data integrity/fault tolerance)
-updated_sclsp_path = os.path.join(data_folder, 'updated_slcsp.csv')
-
-# Path to the log file, let's save a copy of log for future reference
-log_file_path = os.path.join(os.getcwd(), 'logs', 'log.txt')
+updated_sclsp_path = os.path.join(data_folder, 'updated_slcsp.csv') # write path (used for data integrity/fault tolerance/reliability)
+log_file_path = os.path.join(os.getcwd(), 'logs', 'log.txt') # write path for log file (more context for debugging/maintaibility)
 
 # Setup logger
 logging.basicConfig(
@@ -28,44 +22,9 @@ logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-# logging counter for updates
-update_count = 0  
 
-# Helper functions ----------------------------------------------------------------------------
+update_count = 0 # logging counter for updates
 
-# Fetch the zipcodes we need...
-def get_rate_area(zipcode):
-    rate_areas = set()
-    with open(zips_path, mode='r', newline='', encoding='utf-8') as zips_file:
-        csv_reader = csv.DictReader(zips_file)
-        for row in csv_reader:
-            if row['zipcode'] == zipcode:
-                rate_areas.add(row['rate_area'])
-
-    if len(rate_areas) > 1:
-        logging.warning(f"Invalid Rate - Multiple rate areas found for ZIP {zipcode}: {', '.join(rate_areas)} !!!")
-        return None
-    elif len(rate_areas) == 1:
-        return rate_areas.pop()
-    
-    logging.warning(f"Invalid rate - No rate area found for ZIP {zipcode} !!!")
-    return None
-
-# Grab the silver plans we need for a given rate area...
-def get_second_lowest_silver_plan(rate_area):
-    silver_plans = []
-    with open(plans_path, mode='r', newline='', encoding='utf-8') as plans_file:
-        csv_reader = csv.DictReader(plans_file)
-        for row in csv_reader:
-            if row['metal_level'] == 'Silver' and row['rate_area'] == rate_area:
-                silver_plans.append(float(row['rate']))
-    
-    # Sort silver plans, find the 2nd lowest cost, if not enough plans don't return anything...
-    silver_plans = sorted(silver_plans)
-    if len(silver_plans) >= 2:
-        logging.warning(f"Target Silver Plan Not found, need at least 2 plans for rate_area: {rate_area} !!!")
-        return silver_plans[1]
-    return None
 
 # Updating CSV file + Logging -----------------------------------------------------------------------------------
 with open(target_path, mode='r', newline='', encoding='utf-8') as slcsp_file, \
@@ -82,11 +41,11 @@ with open(target_path, mode='r', newline='', encoding='utf-8') as slcsp_file, \
 
     for row in csv_reader:
         zipcode = row['zipcode']
-        rate_area = get_rate_area(zipcode) # Use helper function here...
+        rate_area = get_rate_area(zipcode, zips_path) # Use helper function here...
         
         if rate_area:
             logging.info(f"Found rate area {rate_area} for ZIP {zipcode}")
-            second_lowest_rate = get_second_lowest_silver_plan(rate_area) # Use helper function here...
+            second_lowest_rate = get_second_lowest_silver_plan(rate_area, plans_path) # Use helper function here...
             
             if second_lowest_rate is not None:
                 row['rate'] = f"{second_lowest_rate:.2f}"
